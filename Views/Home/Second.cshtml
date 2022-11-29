@@ -1,0 +1,118 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First lab</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="overlay hidden"></div>
+    <div class="work hidden">
+        <div class="controls">
+        </div>
+        <div class="anim">
+          <canvas class="canvas"></canvas>
+        </div>
+    </div>
+    <div class="header">
+      <div class="text1"><h2 class="text">Бережіть воду - пийте пиво!</h2></div>
+      <div>
+        <nav class="menu">
+          <button class="dropbtn" hidden>|||</button>
+          <ul class="list">
+            <li class="item">
+              <a asp-action="Index"><p>Home</p></a>
+            </li>
+            <li class="item">
+              <a href="#"><p>Second</p></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="main">
+      <div class="section first">
+        <div class="content">
+          <img src="https://ktpu.kpi.ua/wp-content/uploads/2016/12/89dd0d645592478b0b8933e8eb525806.jpg" alt="KPI" usemap="#KPI" />
+          <map name="KPI">
+            <area
+              shape="default"
+              title="KPI"
+              coords=""
+              href="https://kpi.ua/"
+              alt="KPI"
+            />
+          </map>
+          <p>
+            Націона́льний техні́чний університе́т Украї́ни «Ки́ївський політехні́чний
+            інститу́т і́мені І́горя Сіко́рського» — заклад вищої освіти інженерного
+            профілю, заснований в Києві у 1898 р., на сьогодні це один із
+            найбільших університетів України за кількістю студентів з широким
+            спектром спеціальностей і освітніх програм для підготовки фахівців з
+            технічних і гуманітарних наук. З 2009 до 2014 року мав статус
+            автономного дослідницького університету. За рейтингами ВНЗ входить в
+            трійку найкращих в Україні.
+          </p>
+        </div>
+      </div>
+      <div class="section second">
+        <div class="content" id ="section2">
+          <p>
+            Усі кафедри, що входять до складу ФІОТ, беруть свій початок від
+            електротехнічного факультету (ЕТФ), який було створено у 1918 році і
+            з якого у 1962 році виділився факультет автоматики та
+            електроприладобудування. Цей факультет у 1975 році було розділено на
+            два: факультет систем управління та факультет
+            електроприладобудування і обчислювальної техніки. Окремі кафедри цих
+            факультетів у 1985 році були об'єднані у факультет з нинішньою
+            назвою - "Інформатика та обчислювальна техніка" (ФІОТ).
+          </p>
+        </div>
+      </div>
+      <div class="section third">
+        <div class="first-row">
+          <div class="content">
+            <button onclick="openWork()">Play!</button>
+          </div>
+        </div>
+        <div class="second-row">
+          <div class="column">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus aliquid harum doloremque natus blanditiis
+                doloribus dolorum, optio asperiores non totam error adipisci
+                consequuntur autem dolorem aperiam minus quaerat labore odit
+                dolor tempora, laudantium voluptate unde eos! Voluptatibus nisi
+                veniam beatae.Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Necessitatibus aliquid harum doloremque natus blanditiis
+                doloribus dolorum, optio asperiores non totam error adipisci
+                consequuntur autem dolorem aperiam minus quaerat labore odit
+                dolor tempora, laudantium voluptate unde eos! Voluptatibus nisi
+                veniam beatae.
+              </p>
+            </div>
+          </div>
+          <div></div>
+          <div class="column">
+            <div class="content">
+              <p>Lorem</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div><h2 class="text">Смерть москалям!</h2></div>
+    </div>
+    <script src="~/js/second.js"></script>
+  </body>
+</html>
